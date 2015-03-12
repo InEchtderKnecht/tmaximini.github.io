@@ -1,3 +1,64 @@
 .site-header {
-  display: none;
+  //display: none;
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  //background: black;
+  //color: white;
+  &__col {
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+    background: rgb(37, 54, 119);
+    display: table;
+    &:last-child {
+      background: rgb(247, 226, 173);
+    }
+
+    height: 200px;
+    @include mq($bp--small) {
+      height: 350px;
+    }
+  }
+  .wrap {
+    display: table-cell;
+    vertical-align: middle;
+    //@include container;
+    //width: 90%;
+    //margin-top: 80px;
+    //margin-bottom: 120px;
+  }
+}
+
+.site-title {
+
+  color: white;
+  //position: absolute;
+  //color: black;
+  //font-size: 3rem;
+  //font-weight: 900;
+  //font-style: italic;
+  //text-transform: uppercase;
+  //letter-spacing: 0.05em;
+  //display: inline-block;
+  //float: left;
+}
+.site-nav {
+  a {
+    color: black;
+    //font-weight: 900;
+    //font-style: italic;
+    display: block;
+    margin: 1em 0;
+
+    @include mq($bp--small) {
+      margin: 0 1em;
+      display: inline-block;
+    }
+  }
+  button {
+    display: none;
+  }
 }

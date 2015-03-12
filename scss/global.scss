@@ -35,7 +35,7 @@ $susy : (
     output: overlay,
     toggle: top right
   ),
-  container: 980px,
+  container: 1100px,
 );
 
 @import "defaults/normalize.scss";
@@ -43,6 +43,7 @@ $susy : (
 @import "defaults/fonts.scss";
 @import "defaults/base.scss";
 @import "defaults/typography.scss";
+@import "defaults/code.scss";
 
 @import "architecture/header.scss";
 @import "architecture/navigation.scss";

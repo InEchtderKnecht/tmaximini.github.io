@@ -8,8 +8,6 @@ html {
 }
 
 body {
-  background: white;
-  color: black;
   font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -30,6 +28,7 @@ body {
 }
 
 a {
+  color: rgb(33, 13, 210);
   text-decoration: none;
   &:hover, &:focus {
     outline: 0;
@@ -41,8 +40,9 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 { 
-  font-weight: 900;
-  font-style: italic;
+  //font-weight: 900;
+  //font-style: italic;
+  font-weight: 400;
   line-height: 1.2;
   font-size: 4rem;
   @include mq($bp--small) {
@@ -54,17 +54,24 @@ h1 {
 }
 
 h2 {
-  font-weight: 200;
-  font-size: 3rem;
+  //font-family: lilgroteskregular;
+  font-weight: 400;
   line-height: 1.3;
+  font-size: 3rem;
+  @include mq($bp--small) {
+    font-size: 4.4rem;
+  }
   @include mq($bp--medium) {
-    font-size: 6rem;
+    font-size: 5.8rem;
   }
 }
 
 h3 {
-  font-size: 2.6rem;
   line-height: 1.4;
+  font-size: 2.6rem;
+  @include mq($bp--small) {
+    font-size: 3.4rem;
+  }
   @include mq($bp--medium) {
     font-size: 4.2rem;
   }
@@ -73,7 +80,7 @@ h3 {
 p {
   //font-size: 1.6rem;
   line-height: 1.6;
-  margin: .8rem auto;
+  margin: .9em auto;
   //@include mq($bp--medium) {
   //  font-size: 2rem;
   //}
@@ -81,5 +88,12 @@ p {
 
 
 code, kbd, pre, samp {
-  word-break: break-all;
+  //word-break: break-all;
+  font-smoothing: auto;
+  -o-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  letter-spacing: 0.04em;
+  //font-weight: 600;
 }

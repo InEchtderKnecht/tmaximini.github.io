@@ -1,6 +1,9 @@
 .page-content {
   @include container;
-  width: 90%;
+  width: 100%;
+  @include mq($bp--small) {
+    width: 90%;
+  }
   //h1, h2, h3, h4, h5, ul, ol, blockquote, form {
   //  @include full;
   //}
@@ -11,4 +14,66 @@
   //    padding-right: span(1 wide);
   //  }
   //}
+
+  p {
+    //padding: 0 span(1 wide);
+    @include mq($bp--small) {
+      padding: 0 20px;
+    }
+  }
+
+  a {
+    //display: inline-block;
+  }
+
+  //h2, h3 {
+  //  &:before {
+  //    content: '';
+  //    position: absolute;
+  //    top: 100%;
+  //    //right: span(16);
+  //    left: -100%;
+  //    width: 300%;
+  //    height: 6px;
+  //  }
+  //}
+//
+  //h2 {
+  //  &:before {
+  //    background: mix(white, black, 0%);
+  //    margin-top: 10px;
+  //  }
+  //}
+//
+  //h3 {
+  //  &:before {
+  //    background: mix(white, black, 80%);
+  //    margin-top: 9px;
+  //  }
+  //}
+  .post {
+    overflow: hidden;
+    box-shadow: 2px 2px 10px -4px black;
+    background: white;
+    border-radius: 2px;
+    padding: 0 span(1 wide);
+  }
+}
+
+.post-header {
+  @include span(18);
+}
+
+.post-content {
+  @include span(18);
+  @include mq($bp--medium) {
+    @include span(16);
+  }
+}
+
+.meta {
+  margin: 6rem 0;
+  font-size: 1.4rem;
+  text-align: center;
+  color: transparentize(black, 0.4);
 }

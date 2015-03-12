@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -11,7 +16,7 @@ body, html {
 
 
 body {
-  background: white;
+  background: rgb(234, 234, 234);
   color: black;
 }
 
@@ -24,6 +29,7 @@ img {
 }
 
 
-a {
-  color: blue;
+
+h1, h2, h3, h4, h5 {
+  position: relative;
 }
