@@ -1,6 +1,7 @@
 _site
 .DS_Store
 node_modules
+bower_components
 todo.md
 Gemfile.lock
 .sass-cache

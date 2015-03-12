@@ -23,6 +23,7 @@ exclude: [
   Gruntfile.js,
   LICENSE.md,
   node_modules,
+  bower_components,
   readme.md
 ]
 

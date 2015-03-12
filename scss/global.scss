@@ -11,6 +11,32 @@
 //@import "layout";
 //@import "burger";
 
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint.scss";
+@import "../bower_components/susy/sass/susy.scss";
+
+// Breakpoints
+$bp--smallest:            290px;
+$bp--smaller:             560px;
+$bp--small:               768px;
+$bp--medium:              1024px;
+$bp--large:               1280px;
+$bp--larger:              1440px;
+$bp--huge:                1680px;
+
+// Susy grid setup
+$susy : (
+  columns: 18,
+  output: float,
+  gutters: 1/2,
+  gutter-position: split,
+  debug: (
+    image: show,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: top right
+  ),
+  container: 980px,
+);
 
 @import "defaults/normalize.scss";
 @import "defaults/mixins.scss";

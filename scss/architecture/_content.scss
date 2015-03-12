@@ -1,3 +1,14 @@
 .page-content {
-  display: none;
+  @include container;
+  width: 90%;
+  //h1, h2, h3, h4, h5, ul, ol, blockquote, form {
+  //  @include full;
+  //}
+  //p {
+  //  @include full;
+  //  @include mq($bp--small) {
+  //    padding-left: span(1 wide);
+  //    padding-right: span(1 wide);
+  //  }
+  //}
 }

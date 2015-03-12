@@ -22,7 +22,8 @@ exclude: [
   package.json,
   Gruntfile.js,
   node_modules,
-  readme.md
+  bower_components,
+  readme.mdx
 ]
 
 # Build settings
