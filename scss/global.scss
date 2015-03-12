@@ -1,12 +1,24 @@
-$pink: #FC39C5;
-$green: #21CAA3;
-$yellow: #E9CB31;
+//$pink: #FC39C5;
+//$green: #21CAA3;
+//$yellow: #E9CB31;
+//
+//$midgray: #383838;
+//$darkgray: #242424;
 
-$midgray: #383838;
-$darkgray: #242424;
+//@import "variables";
+//@import "reset";
+//@import "main";
+//@import "layout";
+//@import "burger";
 
-@import "variables";
-@import "reset";
-@import "main";
-@import "layout";
-@import "burger";
+
+@import "defaults/normalize.scss";
+@import "defaults/mixins.scss";
+@import "defaults/fonts.scss";
+@import "defaults/base.scss";
+@import "defaults/typography.scss";
+
+@import "architecture/header.scss";
+@import "architecture/navigation.scss";
+@import "architecture/content.scss";
+@import "architecture/footer.scss";

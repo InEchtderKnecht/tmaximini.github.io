@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         tasks: ["shell:jekyllBuild"]
       },
       css: {
-        files: ["scss/*.scss"],
+        files: ["scss/**/*.scss"],
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       },
       svg: {
